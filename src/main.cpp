@@ -6,6 +6,7 @@
 // drivers
 #include "DebounceIn.h"
 
+
 bool do_execute_main_task = false; // this variable will be toggled via the user button (blue button) and
                                    // decides whether to execute the main task or not
 bool do_reset_all_once = false;    // this variable is used to reset certain variables and objects and
@@ -31,6 +32,8 @@ int main()
 
     // led on nucleo board
     DigitalOut user_led(LED1);
+
+
 
     // additional led
     // create DigitalOut object to command extra led, you need to add an aditional resistor, e.g. 220...500 Ohm
